@@ -39,6 +39,7 @@ testem.log
 /Downloads
 token.json
 credentials.json
+README.md
 
 # System files
 .DS_Store
