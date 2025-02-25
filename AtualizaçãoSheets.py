@@ -77,6 +77,12 @@ for download in downloads:
   
   atributos = excel["Atributos"]
   atributos = [[valor] for valor in atributos]
+
+  estoque = excel["Estoque"]
+  estoque = [[valor] for valor in estoque]
+
+  reservado = excel["Reservado"]
+  reservado = [[valor] for valor in reservado]
   
   disponivel = excel["Disponível"]
   disponivel = [[valor] for valor in disponivel]
@@ -90,8 +96,10 @@ for download in downloads:
       {'range': f"PCP PRODUTOS LISOS!A{find_cell_row(valores_produtos, produtos[sku])+2}", 'values': codigo},
       {'range': f"PCP PRODUTOS LISOS!B{find_cell_row(valores_produtos, produtos[sku])+2}", 'values': prod},
       {'range': f"PCP PRODUTOS LISOS!D{find_cell_row(valores_produtos, produtos[sku])+2}", 'values': atributos},
-      {'range': f"PCP PRODUTOS LISOS!F{find_cell_row(valores_produtos, produtos[sku])+2}", 'values': disponivel},
-      {'range': f"PCP PRODUTOS LISOS!G{find_cell_row(valores_produtos, produtos[sku])+2}", 'values': minimo}
+      {'range': f"PCP PRODUTOS LISOS!F{find_cell_row(valores_produtos, produtos[sku])+2}", 'values': estoque},
+      {'range': f"PCP PRODUTOS LISOS!G{find_cell_row(valores_produtos, produtos[sku])+2}", 'values': reservado},
+      {'range': f"PCP PRODUTOS LISOS!H{find_cell_row(valores_produtos, produtos[sku])+2}", 'values': disponivel},
+      {'range': f"PCP PRODUTOS LISOS!I{find_cell_row(valores_produtos, produtos[sku])+2}", 'values': minimo}
     ]
   }
   

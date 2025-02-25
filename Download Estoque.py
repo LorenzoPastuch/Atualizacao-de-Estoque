@@ -64,8 +64,8 @@ def executar():
 
         # Acessar a página de login
         navegador.get('http://168.90.16.122:59478/One/login.jsf')
-        navegador.find_element(By.ID, 'j_username').send_keys("ROMARIO")
-        navegador.find_element(By.ID, 'j_password').send_keys("Romariodev")
+        navegador.find_element(By.ID, 'j_username').send_keys("lorenzo")
+        navegador.find_element(By.ID, 'j_password').send_keys("supercopo3151")
         navegador.find_element(By.ID, 'cl_login').click()
 
         # Acessar a página de estoque
